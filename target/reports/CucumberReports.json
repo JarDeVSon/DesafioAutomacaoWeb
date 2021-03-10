@@ -1,0 +1,131 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T21:32:41.119Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6434294000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.GenericSteps.abreNavegador()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Submarino book",
+        "description": "",
+        "id": "amazon-functionality;submarino-book",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.nio.file.AccessDeniedException: /evidenciaScenario: Submarino book.png\n\tat java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)\n\tat java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)\n\tat java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)\n\tat java.base/sun.nio.fs.UnixCopyFile.copyFile(UnixCopyFile.java:248)\n\tat java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:603)\n\tat java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:258)\n\tat java.base/java.nio.file.Files.copy(Files.java:1295)\n\tat org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1392)\n\tat org.apache.commons.io.FileUtils.copyFile(FileUtils.java:885)\n\tat org.apache.commons.io.FileUtils.copyFile(FileUtils.java:835)\n\tat org.apache.commons.io.FileUtils.copyFile(FileUtils.java:802)\n\tat core.Driver.printScreen(Driver.java:89)\n\tat steps.GenericSteps.fechaNavegador(GenericSteps.java:22)\n",
+              "duration": 352224000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.GenericSteps.fechaNavegador(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11119489000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Entrar no site da submarino \"https://www.submarino.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.submarino.com.br/\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.GenericSteps.entrarNoSiteDaSubmarino(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 425236000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Realizar pesquisa de um livro qualquer",
+            "match": {
+              "location": "steps.SubmarinoSteps.realizarPesquisaDeUmLivroQualquer(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "livro qualquer",
+                  "harry potter"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 318972000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Guardar nome do produto, valor e ISBN",
+            "match": {
+              "location": "steps.SubmarinoSteps.guardarNomeDoProdutoValorISBN(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nome do produto",
+                  "Coleção Harry Potter - 7 Volumes (português) Capa Comum + Marcador Exclusivo - 1ª Ed."
+                ]
+              },
+              {
+                "cells": [
+                  "valor",
+                  "R$ 139,90"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN",
+                  "(Cód.1995355802)"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@submarino"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Functionality",
+    "description": "  As a customer\n  I want to use the amazon website\n  In order to do successful purchases",
+    "id": "amazon-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/submarino.feature",
+    "tags": [
+      {
+        "name": "@submarino",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
